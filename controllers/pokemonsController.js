@@ -36,9 +36,7 @@ const paginatePokemons = (pokemons, limit, page) => {
 };
 
 const fetchPokemons = async () => {
-  const response = await axios.get(
-    "https://pokeapi.co/api/v2/pokemon?limit=50"
-  );
+  const response = await axios.get("https://pokeapi.co/api/v2/pokemon");
   let pokemons = response.data.results;
 
   const detailedPokemons = await Promise.all(
