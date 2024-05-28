@@ -24,6 +24,9 @@ npm install
 
 1. Clona el repositorio:
 git clone https://github.com/eduardoLOEZ/Pokedex-Backend.git
+
+npm install
+
 ```
 ## Iniciar el servidor
 ```bash
