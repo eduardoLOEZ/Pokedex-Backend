@@ -2,6 +2,24 @@
 
 Este proyecto es el backend para una aplicación de Pokédex. Utiliza Node.js con Express para manejar las solicitudes HTTP y se comunica con la PokeAPI para obtener datos sobre los Pokémon.
 
+```plaintext
+pokedex-api/
+├── controllers/
+│   └── pokemonsController.js
+├── models/
+│   └── Pokemon.schema.js
+├── routes/
+│   └── pokemons.js
+├── middleware/
+│   └── validatePagination.js
+├── DB/
+│   └── dbconnection.js
+├
+├── main.js
+└── package.json
+```
+
+
 ## Requisitos
 
 - Node.js (versión recomendada: 14.x o superior)
@@ -34,5 +52,11 @@ npm install
 node src/main.js
 
 ```
+
+## Rutas de la API
+- GET /api/pokemons - Obtener todos los Pokémon
+- GET /api/pokemons/:name - Obtener un Pokémon por nombre 
+
+
 
 [!(https://pokedex-backend-ooi4.onrender.com)
